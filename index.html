@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+			 <!-- https://api.particle.io/v1/devices/{device id}/{function name}?access_token={access token} -->
+	<form action="https://api.particle.io/v1/devices/e00fce6838800cc7de05128e/lightUp?access_token=782b8b65004db27809d80a3d60264477f3dac4a3" method="POST">
+
+		<label for="color">Choose a color:</label>
+	
+		<!-- name must "arg" for particle to reference -->
+		<select id="color" name="arg">
+		  <option value="red">Red</option>
+		  <option value="green">Green</option>
+		  <option value="blue">Blue</option>
+		</select>
+
+		<button type="submit">Submit</button>
+
+	</form>
+</body>
+</html>
